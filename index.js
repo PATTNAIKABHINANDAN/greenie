@@ -27,7 +27,7 @@ app.post("/register",async (req, resp) => {
             })
         }
     } catch (error) {
-        console.error("Error while saving user:", error);
+        console.error("Error saving user:", error);
         resp.status(500).send("An error occurred while saving user.");
     }
 });
