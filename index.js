@@ -65,7 +65,7 @@ app.get("/products",verifyToken,async(req,resp)=>{
         resp.send(products);
     }
     else{
-        resp.send({result:"No Products found"});
+        resp.send({result:"No Products are found"});
     }
 });
 
